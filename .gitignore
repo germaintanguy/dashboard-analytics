@@ -1,0 +1,19 @@
+*.class
+*.log
+*.png
+*.csv
+
+target
+scalajs-client/target
+play-server/target
+play-server/log
+share/target
+
+# Scala-IDE specific
+.scala_dependencies
+
+# Intellij
+nohup.out
+.idea/
+*.iml
+*.iws

@@ -1,0 +1,85 @@
+@(content: Html)
+
+
+</html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Dashboard-Analtics</title>
+    <!-- Bootstrap Styles-->
+    <link href=@routes.Assets.at("css/bootstrap.css") rel="stylesheet"/>
+    <!-- FontAwesome Styles-->
+    <link href=@routes.Assets.at("css/font-awesome.css") rel="stylesheet"/>
+    <!-- Morris Chart Styles-->
+    <!-- Custom Styles-->
+    <link href=@routes.Assets.at("css/custom-styles.css") rel="stylesheet"/>
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+</head>
+
+<body>
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+
+                <li>
+                    <a class="active-menu" href="home.scala.html"><i class="fa fa-dashboard"></i> Home</a>
+                </li>
+                <li>
+                    <a href="data_collection.scala.html"><i class="fa fa-laptop"></i> Data collection</a>
+                </li>
+                <li>
+                    <a href="chart.scala.html"><i class="fa fa-bar-chart-o"></i> Analytics Algorithms</a>
+                </li>
+                <li>
+                    <a href="tabpanel.scala.html"><i class="fa fa-question"></i> Evaluation</a>
+                </li>
+
+                <li>
+                    <a href="table.scala.html"><i class="fa fa-table"></i> Results</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="#">Second Level Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Second Level Link<span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Link</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div id="page-wrapper">
+
+        @content
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
